@@ -9,6 +9,12 @@ var (
 	Cli4suer      = g.Config().GetString("app.Cli4user")
 )
 
+var (
+	SrvCli4RegAddr = g.Config().GetString("srvcli.SrvCli4RegAddr")
+	SrvCli4BaseCli = g.Config().GetString("srvcli.SrvCli4BaseCli")
+	SrvCli4AuthSrv = g.Config().GetString("srvcli.SrvCli4AuthSrv")
+)
+
 // base
 const (
 	BaseId   = 10000 // 默认id

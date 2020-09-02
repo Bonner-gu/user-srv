@@ -3,6 +3,10 @@
     Version = "latest"
     Address = ":10086"
 
+[srvcli]
+     SrvCli4BaseCli ="dsvo.user.srv.cli"
+     SrvCli4RegAddr = "127.0.0.1:2379"
+     SrvCli4AuthSrv  ="dsvo.auth.srv"
 
 # 全局日志配置
 [logger]
