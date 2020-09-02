@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package dm.user.srv;
+
+option go_package = "userSrvPb";
+
+service UserService {
+    rpc UserSignup (SignupReq) returns (UserSignResp) {}; //注册
+
+    rpc UserSignin (SigninReq) returns(UserSignResp) {}; //登录
+ 
+}
+
+message SignupReq{
+    string phone =1;
+    string passwd=2;
+    string right_passwd=3;
+    string source =4;
+    string ip=5;
+}
+
+message SigninReq{
+    string phone =1;
+    string passwd=2;
+}
+
+message Empty {}
+
+message UserSignResp{
+    string token =1;
+}
