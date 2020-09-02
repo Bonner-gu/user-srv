@@ -2,9 +2,11 @@ package main
 
 import (
 	"dm_user_srv/constant"
+	"dm_user_srv/handler"
+	userSrvPb "dm_user_srv/proto/user"
 
 	"github.com/gogf/gf/frame/g"
-	"github.com/micro/go-micro"
+	"github.com/micro/go-micro/v2"
 )
 
 func main() {

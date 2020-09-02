@@ -10,7 +10,7 @@ import (
 type UserService struct{}
 
 //注册
-func (u *UserService) UserSignUp(ctx context.Context, req *userSrvPb.SignupReq, resp *userSrvPb.UserSignResp) error {
+func (u *UserService) UserSignup(ctx context.Context, req *userSrvPb.SignupReq, resp *userSrvPb.UserSignResp) error {
 	//参数校验
 	if err := validation.CkeckSignupParam(req); err != nil {
 		return err
@@ -28,7 +28,7 @@ func (u *UserService) UserSignUp(ctx context.Context, req *userSrvPb.SignupReq, 
 }
 
 //登录
-func (u *UserService) UserSignIn(ctx context.Context, req *userSrvPb.SigninReq, resp *userSrvPb.UserSignResp) error {
+func (u *UserService) UserSignin(ctx context.Context, req *userSrvPb.SigninReq, resp *userSrvPb.UserSignResp) error {
 	//参数校验
 	if err := validation.CheckPhone(req.Phone); err != nil {
 		return err

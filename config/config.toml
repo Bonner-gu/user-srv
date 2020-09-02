@@ -2,7 +2,6 @@
     ServerName = "dm.user.srv"
     Version = "latest"
     Address = ":10086"
-    Cli4user = "dm.user.srv"
 
 
 # 全局日志配置
